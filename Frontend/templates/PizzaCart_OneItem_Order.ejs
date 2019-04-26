@@ -1,0 +1,17 @@
+<div class="order-one ng-scope">
+    <img class="img-aside pizza-icon" alt="Піца" src="<%= pizza.icon %>">
+    <p class="bold mb10 ng-scope">
+        <% var sz = size === 'big_size' ? 'big' : 'small' %>
+        <span class="order-title"><%= pizza.title %> (<%= sz %>)</span>
+    </p>
+    <div class="order-text">
+        <img class="diagonal-image" src="assets/images/size-icon.svg">
+        <span class="diagonal"><%= (sz === 'big' ? pizza.big_size.size : pizza.small_size.size) %></span>
+        <img class="gram-image" src="assets/images/weight.svg">
+        <span class="gram"><%= (sz === 'big' ? pizza.big_size.weight : pizza.small_size.weight) %></span>
+    </div>
+    <div class="price-box">
+        <span class="price"><%= pizza[size].price * quantity %> UAH</span>
+        <span class="label order-pizza-count" style="color:black;"><%= quantity + (quantity == 1 ? ' item' : ' items' )%></span>
+    </div>
+</div>

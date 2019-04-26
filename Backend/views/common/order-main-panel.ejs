@@ -1,0 +1,66 @@
+<div class="row order-page-panel">
+    <div class="left-panel-order">
+        <div class="form-contacts">
+            <div class="attraction">
+                Order details
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="form-horizontal">
+                        <div class="form-group full-name-input">
+                            <label class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10 input-name">
+                                <input class="form-control" type="text" id="input_name" placeholder="Владислав Малиновський">
+                            </div>
+                            <span class="help-block name-help-block text-danger" style="display:none">
+                                Please enter your name
+                            </span>
+                        </div>
+                        <div class="form-group phone-number-input">
+                            <label class="col-sm-2 control-label">Phone number</label>
+                            <div class="col-sm-10 input-phone">
+                                <input class="form-control" type="text" id="input_phone" placeholder="+38 099 4281708">
+                            </div>
+                            <span class="help-block phone-help-block text-danger" style="display:none">
+                               Please enter your number (start with +38 or 0)
+                            </span>
+                        </div>
+                        <div class="form-group address-input">
+                            <label class="col-sm-2 control-label">Delivery address</label>
+                            <div class="col-sm-10 input-address">
+                                <input class="form-control" type="text" id="input_address"
+                                       placeholder="Місто, вулиця, будинок">
+                            </div>
+                            <span class="help-block address-help-block text-danger" style="display:none">
+                                Please enter you delivery address
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 order-summary">
+                    <div class=" bs-callout bs-callout-warning">
+                        <h4>Іnfo</h4>
+                        <p style="display:inline" class="final-delivery-time">
+                            <b>Approximate delivery time:</b>
+                        <p style="display:inline" id="delivery-time"> unknown</p>
+                        </p>
+                        <p style="display:inline" class="final-address">
+                            <b>Delivery address:</b>
+                        <p style="display:inline" id="delivery-address"> unknown</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group button-holder">
+                    <button type="button" class="btn btn-warning btn-block">
+                        Order
+                        <i class="glyphicon glyphicon-chevron-right icon-white">
+                        </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="googleMap">maps</div>
+</div>
